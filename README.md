@@ -18,6 +18,9 @@ Este projeto consiste na criação de um jardim inteligente que, por meio de um 
 A motivação para o desenvolvimento deste projeto surgiu da curiosidade e vontade de explorar novas aplicações da automação residencial, como também da utilização da IoT junto do arduino. 
 
 ## Aplicações
+O sistema de jardim inteligente desenvolvido neste projeto pode ser aplicado em diversas situações do cotidiano. Abaixo estão alguns exemplos:
+- Automação de irrigação em pequenos jardins residenciais, vasos de plantas e hortas domésticas.
+- Controle remoto de sistemas de rega por meio de interfaces web.
 
 ## Lista de Materiais
 | Nome               | Imagem             |
@@ -36,7 +39,6 @@ A motivação para o desenvolvimento deste projeto surgiu da curiosidade e vonta
 
 ## Bibliotecas usadas
 - **rgb_lcd.h:** Biblioteca usada para controlar o visor Grove-LCD RBG Backlight.
-- **Wire.h:** (precisa?)
 
 ## Diagrama de montagem
 <img src="https://github.com/Computacao-Fisica-UFSJ/projeto-final-AlmadaLuiz14/blob/main/EsquemaFritzing/tpFinal_bb.png" alt="Imagem do diagrama de montagem">
@@ -52,12 +54,13 @@ Esse projeto foi montado usando um conjunto de componentes e conexões. Falaremo
 
 - **Sensor de umidade:** O sensor de umidade da terra HW-080 possui um controlador e eles são conectados entre si através de dois jumpers de alimenatção. O controlador, por sua vez, é conectado ao protoboard para receber energia e ao arduino, na porta analógica A0, para transferência de dados. 
 
-
-## Foto do projeto
-
 ## Vídeo de funcionamento
 [Link para o vídeo](https://drive.google.com/drive/folders/1RQaMnDNWxTeHiCYr-p0Y3ENLBdyxyKBA?usp=sharing)
 
 ## Problemas encontrados
+- A dificuldade em criar o sistema web, por causa das limitações físicas de memória do arduino para guardar o HTML, diminuiu as ideias iniciais deixando o site muito mais simples.
+- Por causa do uso de relé, que consome uma corrente grande vinda do arduino, a energia que chegava até o visor LCD ocilava, impactando na clareza do que era mostrado na tela. 
 
 ## Referências usadas
+- [Self-sufficient Watering IoT Station for Vertical Garden](https://projecthub.arduino.cc/mattiamangia2/self-sufficient-watering-iot-station-for-vertical-garden-ff0fc4)
+- [Lazy Indoor Garden](https://projecthub.arduino.cc/londonium2021/lazy-indoor-garden-c1d373)
