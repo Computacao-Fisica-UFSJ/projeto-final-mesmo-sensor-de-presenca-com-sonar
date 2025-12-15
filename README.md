@@ -54,6 +54,13 @@ Esse projeto foi montado usando um conjunto de componentes e conexões. Falaremo
 
 - **Sensor de umidade:** O sensor de umidade da terra HW-080 possui um controlador e eles são conectados entre si através de dois jumpers de alimenatção. O controlador, por sua vez, é conectado ao protoboard para receber energia e ao arduino, na porta analógica A0, para transferência de dados. 
 
+### Descrição do funcionamento do projeto
+A base desse projeto se consiste no processo de rega através da ativação da bomba de água. Isso ocorre nas seguintes situações:
+- Quando o sensor de umidade do solo detecta uma umidade menor que o limiar (especificado em código).
+- Quando se aciona o botão de regar manualmente do servidor web.
+- Quando a hora configurada pelo visor LCD no inicio da execução é atingida.
+Todos essas condições levam o arduino a enviar um sinal lógico alto ao controlador do relé que ativa a bomba de água.
+
 ## Vídeo de funcionamento
 [Link para o vídeo](https://drive.google.com/drive/folders/1RQaMnDNWxTeHiCYr-p0Y3ENLBdyxyKBA?usp=sharing)
 
