@@ -15,6 +15,7 @@ Com o avanço da automação residencial e da Internet das Coisas (IoT), tornou-
 Este projeto consiste na criação de um jardim inteligente que, por meio de um sensor de umidade, verifica a porcentagem de água presente no solo de um vaso de planta, acionando uma bomba d’água sempre que necessário. Além disso, o sistema conta com um servidor embarcado que disponibiliza uma interface web para o controle manual da irrigação. 
 
 ### Motivação
+A motivação para o desenvolvimento deste projeto surgiu da curiosidade e vontade de explorar novas aplicações da automação residencial, como também da utilização da IoT junto do arduino. 
 
 ## Aplicações
 
